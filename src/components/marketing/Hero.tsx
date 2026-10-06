@@ -19,7 +19,7 @@ const HEADLINE_WORDS = [
   "תורים",
   "שנבנתה",
   "|בעברית|",
-  "—",
+  "-",
   "לא",
   "תורגמה",
   "אליה.",
@@ -93,7 +93,7 @@ export function Hero() {
           </motion.h1>
 
           <motion.p variants={fadeUp} className="mt-5 max-w-[46ch] text-lg leading-relaxed text-muted-foreground">
-            יומן, לקוחות, שירותים, צוות ודוחות — בממשק RTL מלא שמרגיש נכון מהרגע הראשון. לא עוד
+            יומן, לקוחות, שירותים, צוות ודוחות - בממשק RTL מלא שמרגיש נכון מהרגע הראשון. לא עוד
             מוצר שהופך ימין לשמאל בדיעבד.
           </motion.p>
 

@@ -10,7 +10,7 @@ import { CtaBand } from "@/components/marketing/CtaBand";
 import { MarketingFooter } from "@/components/marketing/MarketingFooter";
 
 export const metadata: Metadata = {
-  title: "LYNKO — ניהול תורים שנבנה בעברית",
+  title: "LYNKO - ניהול תורים שנבנה בעברית",
 };
 
 export default function LandingPage() {

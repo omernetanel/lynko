@@ -8,7 +8,7 @@ export function MarketingFooter() {
           <Image src="/lynkologow.png" alt="LYNKO" width={151} height={36} className="h-5 w-auto opacity-80" />
         </div>
         <p className="text-sm text-muted-foreground">
-          Book with LYNKO — מערכת ניהול תורים חכמה לעסקים קטנים ובינוניים.
+          Book with LYNKO - מערכת ניהול תורים חכמה לעסקים קטנים ובינוניים.
         </p>
       </div>
     </footer>

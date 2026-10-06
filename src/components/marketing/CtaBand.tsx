@@ -20,7 +20,7 @@ export function CtaBand() {
         <div className="flex flex-col items-start gap-3">
           <CtaLink>נסו את הדמו החי</CtaLink>
           <p className="max-w-[34ch] text-sm text-muted-foreground">
-            זה עדיין דמו חי בפיתוח פעיל — ותוכלו לגעת בו עכשיו, בלי לחכות להשקה.
+            זה עדיין דמו חי בפיתוח פעיל - ותוכלו לגעת בו עכשיו, בלי לחכות להשקה.
           </p>
         </div>
       </div>

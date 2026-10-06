@@ -119,7 +119,7 @@ export function Calendar() {
     if (conflict) {
       const staffName =
         staffMembers.find((member) => member.id === values.staffId)?.name ?? "";
-      return `השעה הזו כבר תפוסה אצל ${staffName} — ${conflict.clientName} (${conflict.start}–${conflict.end})`;
+      return `השעה הזו כבר תפוסה אצל ${staffName} - ${conflict.clientName} (${conflict.start}–${conflict.end})`;
     }
 
     const updated: DayAppointment = {

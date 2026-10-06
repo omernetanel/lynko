@@ -133,13 +133,13 @@ export const STORY_SCENES: StoryScene[] = [
   {
     id: "calendar",
     title: "רואים את כל השבוע במבט אחד",
-    description: "מעבר חלק בין יום, שבוע וחודש — התורים תמיד מסודרים ותמיד ברורים.",
+    description: "מעבר חלק בין יום, שבוע וחודש - התורים תמיד מסודרים ותמיד ברורים.",
     visual: <MiniCalendar />,
   },
   {
     id: "clients",
     title: "כל לקוח, כל הסיפור",
-    description: "תגיות, פרטי קשר והיסטוריית ביקורים — במקום אחד, בלי לחפש בוואטסאפ.",
+    description: "תגיות, פרטי קשר והיסטוריית ביקורים - במקום אחד, בלי לחפש בוואטסאפ.",
     visual: <MiniClients />,
   },
   {
@@ -151,7 +151,7 @@ export const STORY_SCENES: StoryScene[] = [
   {
     id: "notifications",
     title: "תמיד יודעים מה קורה",
-    description: "תור חדש, תזכורת או ביטול — מגיע אליכם ברגע שזה קורה.",
+    description: "תור חדש, תזכורת או ביטול - מגיע אליכם ברגע שזה קורה.",
     visual: <MiniNotifications />,
   },
 ];
