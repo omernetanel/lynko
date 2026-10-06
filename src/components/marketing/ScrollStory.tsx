@@ -103,7 +103,7 @@ function ProgressDot({ index, progress }: { index: number; progress: MotionValue
 
 function ProgressDots({ progress }: { progress: MotionValue<number> }) {
   return (
-    <div className="absolute bottom-10 start-1/2 flex -translate-x-1/2 items-center gap-2">
+    <div className="absolute bottom-10 left-1/2 flex -translate-x-1/2 items-center gap-2">
       {STORY_SCENES.map((scene, index) => (
         <ProgressDot key={scene.id} index={index} progress={progress} />
       ))}

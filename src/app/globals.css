@@ -29,6 +29,14 @@
 /* Consistent press feedback on every button in the app, applied once
    globally instead of repeating it on each button's className. */
 @layer base {
+  /* Mobile browsers paint a default square highlight on tap for any link/
+     button, ignoring border-radius — shows as an ugly box behind rounded
+     pills and chips. Press feedback is handled explicitly below instead. */
+  a,
+  button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
   button:not(:disabled) {
     transition: transform 0.1s ease;
   }
