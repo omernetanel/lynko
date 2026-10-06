@@ -17,25 +17,26 @@ export function MarketingNav() {
   }, []);
 
   return (
-    <motion.header
-      initial={{ opacity: 0, y: -16 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: [0.2, 0.7, 0.2, 1] }}
-      className={`sticky top-0 z-40 border-b bg-background/70 backdrop-blur-md transition-colors ${
-        isScrolled ? "border-border" : "border-transparent"
-      }`}
-    >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+    <header className="sticky top-4 z-40 mt-4 flex justify-center px-4 sm:px-6 lg:px-8">
+      <motion.div
+        initial={{ opacity: 0, y: -16 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: [0.2, 0.7, 0.2, 1] }}
+        className={`flex w-full max-w-xl items-center justify-between gap-4 rounded-full border bg-card/80 px-4 py-2 shadow-card backdrop-blur-md transition-colors ${
+          isScrolled ? "border-primary/30" : "border-border/60"
+        }`}
+      >
         <div dir="ltr">
-          <Image src="/lynkologow.png" alt="LYNKO" width={151} height={36} className="h-7 w-auto" priority />
+          <Image src="/lynkologow.png" alt="LYNKO" width={151} height={36} className="h-6 w-auto" priority />
         </div>
         <Link
           href="/demo"
-          className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-card"
+          className="relative overflow-hidden rounded-full bg-primary px-4 py-1.5 text-sm font-semibold text-primary-foreground shadow-sm transition-[filter] hover:brightness-110"
         >
-          כניסה לדמו
+          <span className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/15 via-white/0 to-black/10" />
+          <span className="relative">כניסה לדמו</span>
         </Link>
-      </div>
-    </motion.header>
+      </motion.div>
+    </header>
   );
 }
