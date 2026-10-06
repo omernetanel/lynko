@@ -19,17 +19,17 @@ export function AmbientBackground() {
   const [primary] = useState(readPrimaryColor);
 
   return (
-    <div aria-hidden className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+    <div aria-hidden className="pointer-events-none fixed inset-0 -z-10 overflow-hidden opacity-50">
       <GhostFibers
         lineColor={primary}
         glowColor={primary}
         scale={2.2}
         layers={4}
         speed={0.18}
-        brightness={1.4}
-        glowIntensity={1.2}
-        vignette={0.85}
-        grain={0.04}
+        brightness={0.85}
+        glowIntensity={0.55}
+        vignette={0.92}
+        grain={0.03}
         fps={30}
       />
     </div>
