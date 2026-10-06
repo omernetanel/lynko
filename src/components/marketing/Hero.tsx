@@ -56,14 +56,18 @@ export function Hero() {
   }
 
   return (
-    <div ref={sectionRef} className="relative overflow-hidden" onMouseMove={handleMouseMove}>
+    <div
+      ref={sectionRef}
+      className="relative flex min-h-[calc(100dvh-6rem)] items-center overflow-hidden"
+      onMouseMove={handleMouseMove}
+    >
       <motion.div
         aria-hidden
         className="pointer-events-none absolute -z-10 h-[26rem] w-[26rem] rounded-full bg-[radial-gradient(circle,color-mix(in_srgb,var(--color-primary)_16%,transparent),transparent_72%)] blur-2xl"
         style={{ x: springSpotlightX, y: springSpotlightY, translateX: "-50%", translateY: "-50%" }}
       />
 
-      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-14 px-4 pb-16 pt-16 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-8 lg:pt-24">
+      <div className="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-14 px-4 py-16 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-8">
         <motion.div initial="hidden" animate="visible" variants={staggerChildren()}>
           <motion.span
             variants={fadeUp}

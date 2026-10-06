@@ -45,7 +45,7 @@ export function FeatureGrid() {
             key={feature.title}
             variants={fadeUp}
             whileHover="hover"
-            className="rounded-xl border border-border/60 bg-card/80 p-6 shadow-card backdrop-blur-md transition-all hover:-translate-y-1 hover:border-primary/40"
+            className="rounded-xl border border-border/40 bg-card/60 p-6 shadow-card backdrop-blur-md transition-all hover:-translate-y-1 hover:border-primary/40"
           >
             <motion.span
               variants={{ hover: { scale: 1.12, rotate: -6 } }}
